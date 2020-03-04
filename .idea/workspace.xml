@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ac56116-bf26-49a6-b31c-b99173f4cd9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ukraine-in-smoke.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/up-in-smoke-campaign.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/ukraine.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oth3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="68d377de-e135-4a99-bf68-eac06b068cfc" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\micha\WebstormProjects\up-in-smoke-campaign.github.io\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TqP1a3y9qTFccxz0mWcDJivkWS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\micha\WebstormProjects\up-in-smoke-campaign.github.io\lang" />
+      <recent name="C:\Users\micha\WebstormProjects\up-in-smoke-campaign.github.io\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\micha\WebstormProjects\up-in-smoke-campaign.github.io" />
+      <recent name="C:\Users\micha\WebstormProjects\up-in-smoke-campaign.github.io\visualisations\countries" />
+      <recent name="C:\Users\micha\WebstormProjects\up-in-smoke-campaign.github.io\visualisations" />
+      <recent name="C:\Users\micha\WebstormProjects\up-in-smoke-campaign.github.io\vis" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/ukraine-in-smoke.github.io/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/up-in-smoke-campaign.github.io/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="old_index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/up-in-smoke-campaign.github.io/old_index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="vis1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/up-in-smoke-campaign.github.io/vis1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.old_index.html" />
+        <item itemvalue="JavaScript Debug.vis1.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ac56116-bf26-49a6-b31c-b99173f4cd9f" name="Default Changelist" comment="" />
+      <created>1574184437628</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574184437628</updated>
+      <workItem from="1574184438723" duration="3096000" />
+      <workItem from="1574284670577" duration="11000" />
+      <workItem from="1574426863017" duration="3651000" />
+      <workItem from="1574785750050" duration="278000" />
+      <workItem from="1575284386262" duration="7116000" />
+      <workItem from="1575294029480" duration="11662000" />
+      <workItem from="1575324593257" duration="562000" />
+      <workItem from="1575476685609" duration="8166000" />
+      <workItem from="1575493057254" duration="23469000" />
+      <workItem from="1575575201722" duration="605000" />
+      <workItem from="1575639726037" duration="4615000" />
+      <workItem from="1575906405412" duration="9490000" />
+      <workItem from="1575966257076" duration="3076000" />
+      <workItem from="1576009873414" duration="3574000" />
+      <workItem from="1576097229448" duration="1264000" />
+      <workItem from="1576143985179" duration="1558000" />
+      <workItem from="1576497280657" duration="3476000" />
+      <workItem from="1576656940092" duration="56000" />
+      <workItem from="1578586791009" duration="785000" />
+      <workItem from="1579623763780" duration="1226000" />
+      <workItem from="1579634601065" duration="624000" />
+      <workItem from="1579681833727" duration="3598000" />
+      <workItem from="1580207505126" duration="5515000" />
+      <workItem from="1580231967903" duration="3703000" />
+      <workItem from="1580291045991" duration="10416000" />
+      <workItem from="1580921724576" duration="1277000" />
+      <workItem from="1580983591150" duration="813000" />
+      <workItem from="1580989041147" duration="15713000" />
+      <workItem from="1581087654983" duration="3124000" />
+      <workItem from="1581184544702" duration="1786000" />
+      <workItem from="1581277995620" duration="20756000" />
+      <workItem from="1581847112941" duration="42000" />
+      <workItem from="1583316791274" duration="3448000" />
+      <workItem from="1583322956780" duration="10944000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1574184520040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574184520040</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1574184960778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574184960778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Country headers">
+      <created>1575546374226</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575546374226</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding the first graph">
+      <created>1575646685920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575646685920</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Small fix to CSS">
+      <created>1575647033532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575647033533</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Small changes">
+      <created>1576144804301</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576144804301</updated>
+    </task>
+    <task id="LOCAL-00007" summary="WIP">
+      <created>1580208230331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580208230331</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rolling out a new version">
+      <created>1581431736056</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581431736056</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Country headers" />
+    <MESSAGE value="Adding the first graph" />
+    <MESSAGE value="Small fix to CSS" />
+    <MESSAGE value="Small changes" />
+    <MESSAGE value="WIP" />
+    <MESSAGE value="Rolling out a new version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rolling out a new version" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="561" y="114" key="CommitChangelistDialog2" timestamp="1581431735468">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="561" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581431735468" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1583322471877">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583322471877" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1576498008757">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576498008757" />
+    <state x="717" y="224" key="VCS.ChangeListViewerDialog" timestamp="1575647299762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="717" y="224" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575647299762" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1581431739438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581431739438" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576097950358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576097950358" />
+    <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583320998404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583320998404" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583324743448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583324743448" />
+    <state x="690" y="174" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog" timestamp="1576497484241">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="174" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576497484241" />
+    <state x="656" y="257" width="607" height="526" key="find.popup" timestamp="1583330583157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="257" width="607" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583330583157" />
+    <state x="687" y="414" key="git4idea.ui.GitResetDialog" timestamp="1575647300973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="414" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575647300973" />
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1575494015033">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575494015033" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1581425486766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581425486766" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581424455692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581424455692" />
+  </component>
+</project>
