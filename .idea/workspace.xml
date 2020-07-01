@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ac56116-bf26-49a6-b31c-b99173f4cd9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ukraine-in-smoke.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/up-in-smoke-campaign.github.io.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/ukraine.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-en.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oth3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ukraine.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +148,18 @@
       <workItem from="1581277995620" duration="20756000" />
       <workItem from="1581847112941" duration="42000" />
       <workItem from="1583316791274" duration="3448000" />
-      <workItem from="1583322956780" duration="10944000" />
+      <workItem from="1583322956780" duration="13069000" />
+      <workItem from="1583342726571" duration="1142000" />
+      <workItem from="1583670584566" duration="18000" />
+      <workItem from="1584015110933" duration="984000" />
+      <workItem from="1584043549869" duration="28000" />
+      <workItem from="1584096528266" duration="3134000" />
+      <workItem from="1584101181039" duration="555000" />
+      <workItem from="1584109896929" duration="39000" />
+      <workItem from="1584110346376" duration="5000" />
+      <workItem from="1592925460789" duration="2841000" />
+      <workItem from="1593185481562" duration="1190000" />
+      <workItem from="1593624467022" duration="4430000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1574184520040</created>
@@ -237,7 +217,56 @@
       <option name="project" value="LOCAL" />
       <updated>1581431736056</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Initial commit">
+      <created>1583334846422</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583334846422</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Minor fixes">
+      <created>1583335168272</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583335168272</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Minor fixes">
+      <created>1583335266587</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583335266587</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Minor fixes">
+      <created>1583335546262</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1583335546262</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Adding meta tags">
+      <created>1584015500126</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584015500126</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changing title, minor fixes, updating source on average price">
+      <created>1592927125398</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1592927125398</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updating Facebook share buttons and meta tags">
+      <created>1593186669186</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593186669186</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,71 +287,39 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Country headers" />
     <MESSAGE value="Adding the first graph" />
     <MESSAGE value="Small fix to CSS" />
     <MESSAGE value="Small changes" />
     <MESSAGE value="WIP" />
     <MESSAGE value="Rolling out a new version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rolling out a new version" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Minor fixes" />
+    <MESSAGE value="Adding meta tags" />
+    <MESSAGE value="Changing title, minor fixes, updating source on average price" />
+    <MESSAGE value="Updating Facebook share buttons and meta tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Facebook share buttons and meta tags" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="561" y="114" key="CommitChangelistDialog2" timestamp="1581431735468">
+    <state x="578" y="114" key="CommitChangelistDialog2" timestamp="1593186668386">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="561" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581431735468" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1583322471877">
+    <state x="578" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593186668386" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593626087125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583322471877" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1576498008757">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593626087125" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593186671721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576498008757" />
-    <state x="717" y="224" key="VCS.ChangeListViewerDialog" timestamp="1575647299762">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593186671721" />
+    <state x="758" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593185804759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="717" y="224" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575647299762" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1581431739438">
+    <state x="758" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593185804759" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1592926337943">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581431739438" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576097950358">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576097950358" />
-    <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583320998404">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583320998404" />
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583324743448">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583324743448" />
-    <state x="690" y="174" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog" timestamp="1576497484241">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="174" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576497484241" />
-    <state x="656" y="257" width="607" height="526" key="find.popup" timestamp="1583330583157">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="257" width="607" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583330583157" />
-    <state x="687" y="414" key="git4idea.ui.GitResetDialog" timestamp="1575647300973">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="687" y="414" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575647300973" />
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1575494015033">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575494015033" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1581425486766">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581425486766" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581424455692">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581424455692" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592926337943" />
   </component>
 </project>
