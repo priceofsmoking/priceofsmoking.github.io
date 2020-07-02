@@ -6,7 +6,6 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-
 header {
     position: relative;
     background-color: black;
@@ -32,13 +31,39 @@ header video {
     transform: translateX(-50%) translateY(-50%);
 }
 
-@media (pointer: coarse) and (hover: none) {
-    header {
-    // TODO
-        /*background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;*/
+.title {
+    font-size: 3.5rem;
+}
+
+@media (max-width: 530px) {
+    .title {
+        font-size: 2.5rem;
     }
+
+    .lead {
+        font-size: 1rem;
+        }
+}
+
+@media (pointer: coarse) and (hover: none) {
     header video {
         display: none;
+    }
+}
+
+@media (max-width: 530px) {
+    header {
+        font-size: smaller;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        font-size: smaller;
     }
 }
 
@@ -108,6 +133,12 @@ a:visited {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
+}
+
+@media (max-width: 530px) {
+    .description {
+        font-size: 1rem;
+    }
 }
 
 .jumbotron {
