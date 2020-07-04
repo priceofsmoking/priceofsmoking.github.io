@@ -92,56 +92,53 @@
 
 <section>
     <div class="container-fluid part-x" id="part-2" >
+        <div class="container" style="max-width: 700px">
+            <div class="jumbotron">
+                <h3>Fact: tobacco accounts for 12% of all death in the world</h3>
 
-            <div class="container" style="max-width: 700px">
-                <div class="jumbotron">
-                    <h3>Fact: tobacco accounts for 12% of all death in the world</h3>
+                <canvas id="chart-area-2" width="400" height="200"></canvas>
 
-                    <canvas id="chart-area-2" width="400" height="200"></canvas>
+                <div class="source"><p>джерело: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
 
-                    <div class="source"><p>джерело: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
-
-                    <p>12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year.</p>
-                    <p>Each of these deaths is preventable.</p>
+                <p>12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year.</p>
+                <p>Each of these deaths is preventable.</p>
 
 
-                    <script>
-                        const blue = "rgb(20,98,106, 0.8)"
-                        const red = "rgb(173,32,32, 0.8)"
+                <script>
+                    const blue = "rgb(20,98,106, 0.8)"
+                    const red = "rgb(173,32,32, 0.8)"
 
-                        new Chart(document.getElementById("chart-area-2"), {
-                            type: 'pie',
-                            data: {
-                                datasets: [{
-                                    data: [
-                                        12,
-                                        88,
-                                    ],
-                                    backgroundColor: [
-                                        red,
-                                        blue
-                                    ],
-                                    label: 'Dataset 1'
-                                }],
-                                labels: [
-                                    'Tobacco, %',
-                                    'Other causes, %'
-                                ]
-                            },
-                            options: {
-                                responsive: true
-                            }
-                        });
-                    </script>
-                </div>
+                    new Chart(document.getElementById("chart-area-2"), {
+                        type: 'pie',
+                        data: {
+                            datasets: [{
+                                data: [
+                                    12,
+                                    88,
+                                ],
+                                backgroundColor: [
+                                    red,
+                                    blue
+                                ],
+                                label: 'Dataset 1'
+                            }],
+                            labels: [
+                                'Tobacco, %',
+                                'Other causes, %'
+                            ]
+                        },
+                        options: {
+                            responsive: true
+                        }
+                    });
+                </script>
+            </div>
         </div>
-
     </div>
 </section>
 
 <section>
     <div class="container-fluid part-x" id="part-3" >
-
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
                 <p><h3>In Ukraine, prices for tobacco products are among the lowest in the world</h3></p>
@@ -230,7 +227,6 @@
 
 <section>
     <div class="container-fluid part-x" id="part-4" >
-
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
                 <p><h3>Факт: in Ukraine, death rate from smoking is among the highest in the world</h3></p>
@@ -329,9 +325,7 @@
 <section>
 
     <div class="container-fluid part-x" id="part-5" >
-
         <div class="container" style="max-width: 700px">
-
             <div class="jumbotron">
                 <h2>Tax increases are already helping to reduce tobacco consumption in Ukraine</h2>
                 <canvas id="chart_1" width="400" height="200"></canvas>
@@ -377,7 +371,6 @@
 
 <section>
     <div class="container-fluid part-x" id="part-6" >
-
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
                 <p><h3>Tax increases are already generating public health benefits in Ukraine</h3></p>
@@ -428,7 +421,7 @@
                 <p>And no, it's not a critical factor in the increase of illicit trade.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/238861522243274209/Economics-of-Tobacco-Taxation-Toolkit" target="_blank"> source</a></sup></p>
                 </div>
             </div>
-    </div>
+        </div>
     </div>
 </section>
 
