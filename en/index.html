@@ -92,17 +92,19 @@
 
 <section>
     <div class="container-fluid part-x" id="part-2" >
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
-                <h3>Fact: tobacco accounts for 12% of all death in the world</h3>
+            <div class="slide">
+                <div class="slide-title">
+                   <h3>Fact: tobacco accounts for 12% of all death in the world</h3>
+                </div>
+                <div class="slide-graphic">        
+                    <canvas id="chart-area-2" width="auto" height="100%"></canvas>
 
-                <canvas id="chart-area-2" width="400" height="200"></canvas>
-
-                <div class="source"><p>джерело: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
-
-                <p>12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year.</p>
-                <p>Each of these deaths is preventable.</p>
-
+                    <div class="source"><p>Source: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
+                </div>
+                <div class="slide-info">
+                    <p>12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year.</p>
+                    <p>Each of these deaths is preventable.</p>
+                </div>    
 
                 <script>
                     const blue = "rgb(20,98,106, 0.8)"
@@ -134,21 +136,24 @@
                 </script>
             </div>
         </div>
-    </div>
 </section>
 
 <section>
     <div class="container-fluid part-x" id="part-3" >
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
+        <div class="slide">
+            <div class="slide-title">
                 <p><h3>In Ukraine, prices for tobacco products are among the lowest in the world</h3></p>
                 <p><h6>Average price of a pack of cigarettes in USD, 2014</h6></p>
+            </div>
+            <div class="slide-graphic">                
                 <p><div id="container1"></div></p>
+            </div>
+            <div class=slide-info>
                 <div class="source"><p>Source: <a href="https://ourworldindata.org/grapher/average-price-of-a-pack-of-cigarettes" target="_blank">Our World in Data</a></p></div>
-                <br><p>At the average current price of 37 UAH <sup style="font-family: Arial; opacity: 0.6">
+                <p>At the average current price of 37 UAH <sup style="font-family: Arial; opacity: 0.6">
                 <a href="https://www.ukrinform.net/rubric-economy/2895917-all-alcohol-tobacco-products-rise-in-price-in-ukraine.html" target="_blank"> source</a></sup>, tobacco is very affordable in Ukraine as compared to other countries in the world.</p>
             </div>
-        </div>
+        </div>        
 
         <script>
             var series = [["DZA",2.09],["ARG",3.47],["ARM",1.74],["AUS",10.64],["AUT",5.34],["AZE",2.7],["BHS",9.75],
@@ -199,7 +204,7 @@
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
                 data: dataset,
-                responsive:true,
+                responsive:false,
                 geographyConfig: {
                     borderColor: '#DEDEDE',
                     highlightBorderWidth: 2,
@@ -224,17 +229,21 @@
             d3.select(window).on('resize', function() {
                 map.resize();
             });
-            </script>
+        </script>
     </div>
 </section>
 
 <section>
     <div class="container-fluid part-x" id="part-4" >
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
-                <p><h3>Fact: in Ukraine, the death rate from smoking is among the highest in the world</h3></p>
-                <p><h6>Death rate from smoking</h6></p>
-                <p><div id="container2"></div></p>
+        <div class="slide">
+            <div class="slide-title">
+                <h3>Fact: in Ukraine, the death rate from smoking is among the highest in the world</h3>
+                <h6>Death rate from smoking</h6>
+            </div>
+            <div class="slide-graphic">
+                <div id="container2"></div>
+            </div>
+            <div class="slide-info">
                 <div class="source"><p>Source: <a href="https://ourworldindata.org/grapher/death-rate-smoking" target="_blank">Our World in Data</a></p></div>
             </div>
         </div>
@@ -294,7 +303,7 @@
             // render map
             new Datamap({
                 element: document.getElementById('container2'),
-                responsive:true,
+                responsive:false,
                 projection: 'mercator', // big world map
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
@@ -322,20 +331,24 @@
             });
          </script>
     </div>
-    </div>
 </section>
 
 <section>
-
     <div class="container-fluid part-x" id="part-5" >
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
+        <div class="slide">
+            <div class="slide-title">
                 <h3>Tax increases are already helping to reduce tobacco consumption in Ukraine</h3>
-                <canvas id="chart_1" width="400" height="200"></canvas>
-                <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
-                <p>The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.
-                    <sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank"> source</a></sup></p>
             </div>
+            <div class="slide-graphic">
+                <canvas id="chart_1" width="400" height="200"></canvas>
+            </div>
+            <div class="slide-info">
+                <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p>
+                </div>
+                <p>The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.
+                    <sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank"> source</a></sup>
+                </p>
+            </div>  
         </div>
 
         <script>
@@ -374,45 +387,14 @@
 
 <section>
     <div class="container-fluid part-x" id="part-6" >
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
-                <p><h3>Tax increases are already generating public health benefits in Ukraine</h3></p>
-
-                    <canvas id="chart-area-3" width="400" height="200"></canvas>
-      
-                <script>
-                    new Chart(document.getElementById("chart-area-3"), {
-                        "type": "bar",
-                        "data": {
-                            "labels": ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
-                            "datasets": [{
-                                "label": "Tobacco excise revenue, bln UAH",
-                                "data": [3.6,9.1,13.1,15.3,16.6,17.9,18.1,22.2,33.2,39.9,43.6],
-                                "type": "line",
-                                "fill": false,
-                                "backgroundColor": blue,
-                                "borderColor": blue
-                            },{
-                                "label": "Excise per pack of cigarettes, UAH",
-                                "data": [0.58,1.62,2.74,3.48,4.04,4.76,4.96,6.08,8.62,12,15.5],
-                                "type": "line",
-                                "fill": false,
-                                "borderColor": red,
-                                // "backgroundColor": "rgba(255, 99, 132, 0.8)"}]
-                                "backgroundColor": red,}]
-                        },
-                        "options": {
-                            "scales": {
-                                "yAxes": [{
-                                    "ticks": {
-                                        "beginAtZero": true
-                                    }
-                                }]
-                            }
-                        }
-                    });
-                </script>
-
+        <div class="slide">
+            <div class="slide-title">
+                <h3>Tax increases are already generating public health benefits in Ukraine</h3>
+            </div>
+            <div class="slide-graphic">
+                <canvas id="chart-area-3" width="auto" height="100%"></canvas>
+            </div>
+            <div class="slide-info">
                 <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
                 <div style="font-size: small">
                 <p>World Bank's simulation estimated the public-health impacts of tobacco taxation measures, along with other tobacco control policies.
@@ -422,6 +404,42 @@
                 <p>Reductions in disease and death will save UAH 1.5 billion in health care costs and UAH 16.5 billion in premature mortality costs.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/893811554737147697/Is-Tobacco-Taxation-Regressive-Evidence-on-Public-Health-Domestic-Resource-Mobilization-and-Equity-Improvements" target="_blank"> source</a></sup> It will also avert the GDP loss of 3,2%.<sup style="font-family: Arial; opacity: 0.6"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5801657/" target="_blank"> джерело</a></sup></p>
 
                 <p>And no, it's not a critical factor in the increase of illicit trade.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/238861522243274209/Economics-of-Tobacco-Taxation-Toolkit" target="_blank"> source</a></sup></p>
+            </div>
+        </div>
+            <script>
+                new Chart(document.getElementById("chart-area-3"), {
+                    "type": "bar",
+                    "data": {
+                        "labels": ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+                        "datasets": [{
+                            "label": "Tobacco excise revenue, bln UAH",
+                            "data": [3.6,9.1,13.1,15.3,16.6,17.9,18.1,22.2,33.2,39.9,43.6],
+                            "type": "line",
+                            "fill": false,
+                            "backgroundColor": blue,
+                            "borderColor": blue
+                        },{
+                            "label": "Excise per pack of cigarettes, UAH",
+                            "data": [0.58,1.62,2.74,3.48,4.04,4.76,4.96,6.08,8.62,12,15.5],
+                            "type": "line",
+                            "fill": false,
+                            "borderColor": red,
+                            // "backgroundColor": "rgba(255, 99, 132, 0.8)"}]
+                            "backgroundColor": red,}]
+                    },
+                    "options": {
+                        "scales": {
+                            "yAxes": [{
+                                "ticks": {
+                                    "beginAtZero": true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+
+                
                 </div>
             </div>
         </div>

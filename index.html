@@ -209,7 +209,7 @@
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
                 data: dataset,
-                responsive: false,
+                responsive: true,
                 geographyConfig: {
                     borderColor: '#DEDEDE',
                     highlightBorderWidth: 2,
@@ -231,8 +231,6 @@
                     }
                 }
             });
-
-            // Alternatively with d3
             d3.select(window).on('resize', function() {
                 map.resize();
             });

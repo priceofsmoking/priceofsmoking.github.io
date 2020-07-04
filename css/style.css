@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'Merriweather', serif;
+    background-color: #1d2124;
 }
 
 header {
@@ -114,18 +115,15 @@ a:visited {
 }
 
 .part-x {
-    background: #1d2124;
     display: flex;
-    flex-direction: column;
 
     color: #5a6268;
     font-size: xx-large;
+    
+    padding: 0;
+    margin: 10px 0px 10px 0px;
+    height: 100vh;
 
-    padding: 10px 0px 10px 0px;
-    margin: 0;
-
-    align-items: center;
-    justify-content: center;
     text-align: center;
 
     display: -webkit-box;
@@ -140,10 +138,29 @@ a:visited {
     }
 }
 
-.jumbotron {
+.slide {
+    background-color: #e9ecef;
+    border-radius: .3rem;
     font-size: 16px;
     font-weight: 400;
     opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.slide-title {
+    height: 20vh;
+}
+
+.slide-graphic {
+    height: 55vh
+}
+
+.slide-info {
+    padding-top: 10px;
+    height: 25vh;
 }
 
 .scroll-down {
@@ -172,14 +189,39 @@ a:visited {
 }
 
 #container1, #container2 { 
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
     position: relative; 
     text-align: left;
 }
 
-#container2 { /*width: 420px;*/ height: 285px; position: relative; }
+#part-2 .slide-title {
+    height: 15vh;
+}
 
+#part-4 .slide-title {
+    height: 25vh;
+}
+
+#part-4 .slide-graphic {
+    height: 60vh
+}
+
+#part-4 .slide-info {
+    height: 10vh;
+}
+
+#part-5 .slide-title {
+    height: 10vh;
+}
+
+#part-6 .slide-title {
+    height: 15vh;
+}
+
+#part-6 .slide-graphic {
+    height: 40vh;
+}
 
 #part-last {
     background: #999999;
