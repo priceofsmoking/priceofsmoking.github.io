@@ -118,10 +118,6 @@ a:visited {
     padding: 10px;
 }
 
-.slide-title {
-    height: 20vh;
-}
-
 .slide-graphic {
     height: 55vh
 }
@@ -163,8 +159,20 @@ a:visited {
     text-align: left;
 }
 
+#lang {
+    color: red;
+}
+
+#lang:hover {
+    cursor: pointer; 
+}
+
 #part-2 .slide-title {
     height: 15vh;
+}
+
+#part-3 .slide-graphic {
+    height: 50vh;
 }
 
 #part-4 .slide-title {
@@ -179,7 +187,11 @@ a:visited {
     height: 10vh;
 }
 
-#part-5 .slide-title {
+#part-5 .slide-title .ukr {
+    height: 15vh;
+}
+
+#part-5 .slide-title .en {
     height: 10vh;
 }
 
@@ -188,7 +200,7 @@ a:visited {
 }
 
 #part-6 .slide-graphic {
-    height: 40vh;
+    height: 35vh;
 }
 
 #part-last {
