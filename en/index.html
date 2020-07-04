@@ -44,6 +44,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.8/datamaps.all.js"></script>
 
+    <script>
+        const responsive = window.matchMedia( "(max-width: 700px)" ).matches;
+    </script>
+
 </head>
 <body>
 
@@ -197,6 +201,8 @@
                 dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value) };
             });
 
+            console.log({responsive: responsive});
+
             // render map
             new Datamap({
                 element: document.getElementById('container1'),
@@ -204,7 +210,7 @@
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
                 data: dataset,
-                responsive:false,
+                responsive: responsive,
                 geographyConfig: {
                     borderColor: '#DEDEDE',
                     highlightBorderWidth: 2,
@@ -303,7 +309,7 @@
             // render map
             new Datamap({
                 element: document.getElementById('container2'),
-                responsive:false,
+                responsive: responsive,
                 projection: 'mercator', // big world map
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
@@ -340,7 +346,7 @@
                 <h3>Tax increases are already helping to reduce tobacco consumption in Ukraine</h3>
             </div>
             <div class="slide-graphic">
-                <canvas id="chart_1" width="400" height="200"></canvas>
+                <canvas id="chart_1"></canvas>
             </div>
             <div class="slide-info">
                 <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p>
@@ -392,7 +398,7 @@
                 <h3>Tax increases are already generating public health benefits in Ukraine</h3>
             </div>
             <div class="slide-graphic">
-                <canvas id="chart-area-3" width="auto" height="100%"></canvas>
+                <canvas id="chart-area-3" height="200"></canvas>
             </div>
             <div class="slide-info">
                 <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
@@ -558,11 +564,11 @@
     function stick(el, i) {
         window.addEventListener("scroll", function() {
             var fromTop = el.getBoundingClientRect().top;
-            if (Math.abs(fromTop) < 20 && inViews[i] == false) {
+            if (Math.abs(fromTop) < 50 && inViews[i] == false) {
                 el.scrollIntoView();
                 inViews[i] = true;
             }
-            if (Math.abs(fromTop) >= 20) {
+            if (Math.abs(fromTop) >= 50) {
                 inViews[i] = false;
             }
         })  
