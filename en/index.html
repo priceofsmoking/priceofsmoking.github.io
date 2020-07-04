@@ -40,9 +40,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="../js/utils.js"></script>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.8/datamaps.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.8/datamaps.all.js"></script>
 
 </head>
 <body>
@@ -84,67 +84,61 @@
         <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
                 <p><h1 class="title">Ukraine: the Price of Smoking</h1></p>
-                <p><a class="lead">Every year, tobacco kills up to a half of its users worldwide. The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.</a></p>
-
-                <div class="scroll-down" style="padding: 3vh"><a href="#part-2">LEARN MORE</a></div>
+                <p><a class="lead">Every year, tobacco kills up to a half of its users worldwide. The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.</a></p>                
             </div>
         </div>
     </div>
 </header>
 
 <section>
-    <div class="container-fluid part-x" id="part-2" style="height: 100vh">
+    <div class="container-fluid part-x" id="part-2" >
+        <div class="container" style="max-width: 700px">
+            <div class="jumbotron">
+                <h3>Fact: tobacco accounts for 12% of all death in the world</h3>
 
-            <div class="container" style="max-width: 700px">
-                <div class="jumbotron">
-                    <h3>Fact: tobacco accounts for 12% of all death in the world</h3>
+                <canvas id="chart-area-2" width="400" height="200"></canvas>
 
-                    <canvas id="chart-area-2" width="400" height="200"></canvas>
+                <div class="source"><p>джерело: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
 
-                    <div class="source"><p>джерело: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
-
-                    <p>12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year.</p>
-                    <p>Each of these deaths is preventable.</p>
+                <p>12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year.</p>
+                <p>Each of these deaths is preventable.</p>
 
 
-                    <script>
-                        const blue = "rgb(20,98,106, 0.8)"
-                        const red = "rgb(173,32,32, 0.8)"
+                <script>
+                    const blue = "rgb(20,98,106, 0.8)"
+                    const red = "rgb(173,32,32, 0.8)"
 
-                        new Chart(document.getElementById("chart-area-2"), {
-                            type: 'pie',
-                            data: {
-                                datasets: [{
-                                    data: [
-                                        12,
-                                        88,
-                                    ],
-                                    backgroundColor: [
-                                        red,
-                                        blue
-                                    ],
-                                    label: 'Dataset 1'
-                                }],
-                                labels: [
-                                    'Tobacco, %',
-                                    'Other causes, %'
-                                ]
-                            },
-                            options: {
-                                responsive: true
-                            }
-                        });
-                    </script>
-                </div>
-                <div class="scroll-down"><a href="#part-3">LEARN MORE</a></div></div>
+                    new Chart(document.getElementById("chart-area-2"), {
+                        type: 'pie',
+                        data: {
+                            datasets: [{
+                                data: [
+                                    12,
+                                    88,
+                                ],
+                                backgroundColor: [
+                                    red,
+                                    blue
+                                ],
+                                label: 'Dataset 1'
+                            }],
+                            labels: [
+                                'Tobacco, %',
+                                'Other causes, %'
+                            ]
+                        },
+                        options: {
+                            responsive: true
+                        }
+                    });
+                </script>
+            </div>
         </div>
-
     </div>
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="part-3" style="height: 100vh">
-
+    <div class="container-fluid part-x" id="part-3" >
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
                 <p><h3>In Ukraine, prices for tobacco products are among the lowest in the world</h3></p>
@@ -154,8 +148,6 @@
                 <br><p>At the average current price of 37 UAH <sup style="font-family: Arial; opacity: 0.6">
                 <a href="https://www.ukrinform.net/rubric-economy/2895917-all-alcohol-tobacco-products-rise-in-price-in-ukraine.html" target="_blank"> source</a></sup>, tobacco is very affordable in Ukraine as compared to other countries in the world.</p>
             </div>
-
-            <div class="scroll-down"><a href="#part-4">LEARN MORE</a></div>
         </div>
 
         <script>
@@ -207,7 +199,7 @@
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
                 data: dataset,
-                responsive:false,
+                responsive:true,
                 geographyConfig: {
                     borderColor: '#DEDEDE',
                     highlightBorderWidth: 2,
@@ -229,16 +221,18 @@
                     }
                 }
             });
+            d3.select(window).on('resize', function() {
+                map.resize();
+            });
             </script>
     </div>
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="part-4" style="height: 100vh">
-
+    <div class="container-fluid part-x" id="part-4" >
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
-                <p><h3>Факт: in Ukraine, death rate from smoking is among the highest in the world</h3></p>
+                <p><h3>Fact: in Ukraine, the death rate from smoking is among the highest in the world</h3></p>
                 <p><h6>Death rate from smoking</h6></p>
                 <p><div id="container2"></div></p>
                 <div class="source"><p>Source: <a href="https://ourworldindata.org/grapher/death-rate-smoking" target="_blank">Our World in Data</a></p></div>
@@ -300,7 +294,7 @@
             // render map
             new Datamap({
                 element: document.getElementById('container2'),
-                responsive:false,
+                responsive:true,
                 projection: 'mercator', // big world map
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
@@ -327,27 +321,22 @@
                 }
             });
          </script>
-        <div class="scroll-down"><a href="#part-5">LEARN MORE</a></div>
     </div>
     </div>
 </section>
 
 <section>
 
-    <div class="container-fluid part-x" id="part-5" style="height: 100vh">
-
+    <div class="container-fluid part-x" id="part-5" >
         <div class="container" style="max-width: 700px">
-
             <div class="jumbotron">
-                <h2>Tax increases are already helping to reduce tobacco consumption in Ukraine</h2>
+                <h3>Tax increases are already helping to reduce tobacco consumption in Ukraine</h3>
                 <canvas id="chart_1" width="400" height="200"></canvas>
                 <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
                 <p>The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.
                     <sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank"> source</a></sup></p>
             </div>
         </div>
-        <div class="scroll-down"><a href="#part-6">LEARN MORE</a></div>
-
 
         <script>
             new Chart(document.getElementById("chart_1"), {
@@ -384,14 +373,13 @@
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="part-6" style="height: 100vh">
-
+    <div class="container-fluid part-x" id="part-6" >
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
                 <p><h3>Tax increases are already generating public health benefits in Ukraine</h3></p>
 
-                <canvas id="chart-area-3" width="400" height="200"></canvas>
-
+                    <canvas id="chart-area-3" width="400" height="200"></canvas>
+      
                 <script>
                     new Chart(document.getElementById("chart-area-3"), {
                         "type": "bar",
@@ -436,13 +424,12 @@
                 <p>And no, it's not a critical factor in the increase of illicit trade.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/238861522243274209/Economics-of-Tobacco-Taxation-Toolkit" target="_blank"> source</a></sup></p>
                 </div>
             </div>
-            <div class="scroll-down"><a href="#part-last">LEARN MORE</a><br><br></div></div>
-    </div>
+        </div>
     </div>
 </section>
 
 <section>
-    <div class="container-fluid" id="part-last" style="height: 100vh">
+    <div class="container-fluid part-x" id="part-last" >
         <div class="container" style="color: #1d2124; opacity: 0.9;">
             <p class="ml12" style="font-size: 6.5vh; font-weight: 300; line-height: 1.2;">Ukraine: the Price of Smoking</p>
 
