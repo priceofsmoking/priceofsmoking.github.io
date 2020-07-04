@@ -259,9 +259,6 @@
                     }
                 }
             });
-            d3.select(window).on('resize', function() {
-                map.resize();
-            });
         </script>
     </div>
 </section>
@@ -655,9 +652,7 @@
 
     var lang = document.getElementById("lang");
     var showUKR = true;
-    $('.en').hide();
     lang.onclick = function() {
-        console.log("click")
         if (showUKR) {
             $('.ukr').hide();
             $('.en').show();
