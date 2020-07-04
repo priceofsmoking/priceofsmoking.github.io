@@ -546,6 +546,30 @@
         </script>
     </div>
 </section>
+<script>
+    var els = document.getElementsByClassName("part-x");
+
+    var inViews = [];
+    for(var i=0; i<els.length; i++) {
+        inViews[i] = false;
+        stick(els[i], i);
+    }
+
+    function stick(el, i) {
+        window.addEventListener("scroll", function() {
+            var fromTop = el.getBoundingClientRect().top;
+            if (Math.abs(fromTop) < 20 && inViews[i] == false) {
+                el.scrollIntoView();
+                inViews[i] = true;
+            }
+            if (Math.abs(fromTop) >= 20) {
+                inViews[i] = false;
+            }
+        })  
+    }
+
+    
+</script>
 
 </body>
 </html>
