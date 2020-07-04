@@ -171,7 +171,12 @@ a:visited {
         font-size: 3.5rem }
 }
 
-#container1 { /*width: 420px;*/ height: 285px; position: relative; }
+#container1, #container2 { 
+    width: 100%;
+    height: auto;
+    position: relative; 
+    text-align: left;
+}
 
 #container2 { /*width: 420px;*/ height: 285px; position: relative; }
 

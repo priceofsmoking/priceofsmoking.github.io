@@ -199,7 +199,7 @@
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
                 data: dataset,
-                responsive:false,
+                responsive:true,
                 geographyConfig: {
                     borderColor: '#DEDEDE',
                     highlightBorderWidth: 2,
@@ -221,6 +221,9 @@
                     }
                 }
             });
+            d3.select(window).on('resize', function() {
+                map.resize();
+            });
             </script>
     </div>
 </section>
@@ -229,7 +232,7 @@
     <div class="container-fluid part-x" id="part-4" >
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
-                <p><h3>Факт: in Ukraine, death rate from smoking is among the highest in the world</h3></p>
+                <p><h3>Fact: in Ukraine, the death rate from smoking is among the highest in the world</h3></p>
                 <p><h6>Death rate from smoking</h6></p>
                 <p><div id="container2"></div></p>
                 <div class="source"><p>Source: <a href="https://ourworldindata.org/grapher/death-rate-smoking" target="_blank">Our World in Data</a></p></div>
@@ -291,7 +294,7 @@
             // render map
             new Datamap({
                 element: document.getElementById('container2'),
-                responsive:false,
+                responsive:true,
                 projection: 'mercator', // big world map
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
@@ -327,7 +330,7 @@
     <div class="container-fluid part-x" id="part-5" >
         <div class="container" style="max-width: 700px">
             <div class="jumbotron">
-                <h2>Tax increases are already helping to reduce tobacco consumption in Ukraine</h2>
+                <h3>Tax increases are already helping to reduce tobacco consumption in Ukraine</h3>
                 <canvas id="chart_1" width="400" height="200"></canvas>
                 <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
                 <p>The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.
@@ -375,8 +378,8 @@
             <div class="jumbotron">
                 <p><h3>Tax increases are already generating public health benefits in Ukraine</h3></p>
 
-                <canvas id="chart-area-3" width="400" height="200"></canvas>
-
+                    <canvas id="chart-area-3" width="400" height="200"></canvas>
+      
                 <script>
                     new Chart(document.getElementById("chart-area-3"), {
                         "type": "bar",
