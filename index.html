@@ -2,18 +2,16 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"           content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta name="description"        content="Щороку, тютюн вбиває до половини курців. Податок, що підвищує ціну тютюну на 10%, знижує його вживання на 5%. Це особливо ефективно серед молоді та людей з низьким рівнем доходу.">
-    <meta name="keywords"           content="HTML,CSS,JavaScript">
-    <meta name="author"             content="P.E.N.">
-    <meta property="og:url"         content="https://priceofsmoking.org" />
-    <meta property="og:type"        content="website" />
-    <meta property="og:title"       content="Україна: ціна куріння | Ukraine: the Price of Smoking" />
-    <meta property="og:description" content=">Щороку, тютюн вбиває до половини курців. Податок, що підвищує ціну тютюну на 10%, знижує його вживання на 5%. Це особливо ефективно серед молоді та людей з низьким рівнем доходу." />
-    <meta property="og:image"       content="https://priceofsmoking.org/oth3.gif" />
-
-    <link rel="canonical"           href="https://stayhomecampaign.org" />
-
+    <meta name="viewport"               content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description"            content="12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year. Each of these deaths is preventable." />
+    <meta name="keywords"               content="HTML,CSS,JavaScript">
+    <meta name="author"                 content="P.E.N.">
+    <meta property="og:url"             content="https://priceofsmoking.org/" />
+    <meta property="og:type"            content="website" />
+    <meta property="og:title"           content="Україна задимлена | Ukraine: the Price of Smoking" />
+    <meta property="og:description"     content="12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year. Each of these deaths is preventable." />
+    <meta property="og:image"           content="https://priceofsmoking.org/oth3.gif" />
+    <link rel="canonical"               href="https://stayhomecampaign.org" />
 
     <title>Україна: ціна куріння | Ukraine: the Price of Smoking</title>
 
@@ -21,7 +19,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- Custom font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
@@ -40,14 +38,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="js/utils.js"></script>
+    <script src="./js/utils.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.8/datamaps.all.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 
+    <script>
+        const responsive = window.matchMedia( "(max-width: 700px)" ).matches;
+    </script>
 
 </head>
 <body>
@@ -77,6 +76,7 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="vVe0ezNm"></script>
 
+<!-- Header -->
 <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -84,12 +84,23 @@
     </video>
 
     <div class="container h-100">
-        <strong><div class="text-right align-items-center"><br>Українська | <a href="en/">English</a></div></strong>
+        <div class="text-right align-items-center">
+            <a id="lang">
+            <br>
+                <strong class="en">Українська</strong>
+                <strong class="ukr">English</strong>
+            </a>
+        </div>
         <div class="d-flex h-100 text-center align-items-center">
-            <div class="w-100 text-white">
+            <div class="w-100 text-white en">
+                <p><h1 class="title en">Ukraine: the Price of Smoking</h1></p>
+                <p class="lead">Every year, tobacco kills up to a half of its users worldwide. The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.</p>
+                <div class="scroll-down" style="padding: 3vh"><a href="#part-2">LEARN MORE</a></div>                
+            </div>
+            <div class="w-100 text-white ukr">
                 <p><h1 class="title">Україна: ціна куріння</h1></p>
                 <p class="lead">Щороку, тютюн вбиває до половини курців. Податок, що підвищує ціну тютюну на 10%, знижує його вживання на 5%. Це особливо ефективно серед молоді та людей з низьким рівнем доходу.</p>
-<!--                <p class="lead">Дякуємо Україні за захист своїх громадян та їхніх дітей завдяки оподаткуванню тютюнових виробів!</p>-->            
+                <div class="scroll-down" style="padding: 3vh"><a href="#part-2">прокрути вниз</a></div>
             </div>
         </div>
     </div>
@@ -97,68 +108,83 @@
 
 <section>
     <div class="container-fluid part-x" id="part-2" >
-
-            <div class="container" style="max-width: 700px">
-                <div class="jumbotron">
-                    <h3>Факт: тютюн відповідальний за 12% всіх смертей у світі</h3>
-
-                    <canvas id="chart-area-2" width="400" height="200"></canvas>
-
-                    <div class="source"><p>джерело: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
-
-                    <p>Після 30 років 12% людей помирає від куріння.Він вбиває більше 8 мільйонів людей щороку.</p>
-                    <p>Кожній з цих смертей можна запобігти.</p>
-
-                    <script>
-                        const blue = "rgb(20,98,106, 0.8)"
-                        const red = "rgb(173,32,32, 0.8)"
-
-
-                        new Chart(document.getElementById("chart-area-2"), {
-                            type: 'pie',
-                            data: {
-                                datasets: [{
-                                    data: [
-                                        12,
-                                        88,
-                                    ],
-                                    backgroundColor: [
-                                        red,
-                                        blue
-                                    ],
-                                    label: 'Dataset 1'
-                                }],
-                                labels: [
-                                    'тютюн, %',
-                                    'інші причини, %'
-                                ]
-                            },
-                            options: {
-                                responsive: true
-                            }
-                        });
-                    </script>
-                </div>
+        <div class="slide">
+            <div class="slide-title">
+                <h3 class="en">Fact: tobacco accounts for 12% of all death in the world</h3>
+                <h3 class="ukr">Факт: тютюн відповідальний за 12% всіх смертей у світі</h3>
+            </div>
+            <div class="slide-graphic">        
+                <canvas id="chart-area-2" height="150"></canvas>
+            </div>
+            <div class="slide-info en">                
+                <div class="source en"><p>Source: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
+                <div class="source"><p>джерело: <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></p></div>
+                <p>12% of all deaths among adults aged 30 years and over were attributed to tobacco use. It kills more than 8 million people each year.</p>
+                <p>Each of these deaths is preventable.</p>
+            </div>
+            <div class="slide-info ukr">
+                <p>Після 30 років 12% людей помирає від куріння.Він вбиває більше 8 мільйонів людей щороку.</p>
+                <p>Кожній з цих смертей можна запобігти.</p>
+            </div>      
         </div>
 
+        <script>
+            const blue = "rgb(20,98,106, 0.8)"
+            const red = "rgb(173,32,32, 0.8)"
+
+            new Chart(document.getElementById("chart-area-2"), {
+                type: 'pie',
+                data: {
+                    datasets: [{
+                        data: [
+                            12,
+                            88,
+                        ],
+                        backgroundColor: [
+                            red,
+                            blue
+                        ],
+                        label: 'Dataset 1'
+                    }],
+                    labels: [
+                        'Tobacco, %',
+                        'Other causes, %'
+                    ]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+        </script>
     </div>
 </section>
 
 <section>
     <div class="container-fluid part-x" id="part-3" >
-
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
+        <div class="slide">
+            <div class="slide-title en">
+                <p><h3>In Ukraine, prices for tobacco products are among the lowest in the world</h3></p>
+                <p><h6>Average price of a pack of cigarettes in USD, 2014</h6></p>
+            </div>
+            <div class="slide-title ukr">
                 <p><h3>В Україні ціни на тютюнові вироби одні з найнищих у світі</h3></p>
                 <p><h6>Середня ціна за пачку цигарок в USD, станом на 2014</h6></p>
+            </div>
+            <div class="slide-graphic">                
                 <p><div id="container1"></div></p>
+            </div>
+            <div class="slide-info en">
+                <div class="source"><p>Source: <a href="https://ourworldindata.org/grapher/average-price-of-a-pack-of-cigarettes" target="_blank">Our World in Data</a></p></div>
+                <p>At the average current price of 37 UAH <sup style="font-family: Arial; opacity: 0.6">
+                <a href="https://www.ukrinform.net/rubric-economy/2895917-all-alcohol-tobacco-products-rise-in-price-in-ukraine.html" target="_blank"> source</a></sup>, tobacco is very affordable in Ukraine as compared to other countries in the world.</p>
+            </div>
+            <div class="slide-info ukr">
                 <div class="source"><p>джерело: <a href="https://ourworldindata.org/grapher/average-price-of-a-pack-of-cigarettes" target="_blank">Our World in Data</a></p></div>
                 <br><p>Середня ціна за пачку цигарок становить 37 грн<sup style="font-family: Arial; opacity: 0.6">
                 <a href="https://www.ukrinform.net/rubric-economy/2895917-all-alcohol-tobacco-products-rise-in-price-in-ukraine.html" target="_blank">джерело</a></sup>,
                 тож тютюн надзвичайно доступний в Україні, порівняно з іншими країнами світу</p>
             </div>
-        </div>
-
+        </div>        
 
         <script>
             var series = [["DZA",2.09],["ARG",3.47],["ARM",1.74],["AUS",10.64],["AUT",5.34],["AZE",2.7],["BHS",9.75],
@@ -202,6 +228,8 @@
                 dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value) };
             });
 
+            console.log({responsive: responsive});
+
             // render map
             new Datamap({
                 element: document.getElementById('container1'),
@@ -209,7 +237,7 @@
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
                 data: dataset,
-                responsive: false,
+                responsive: responsive,
                 geographyConfig: {
                     borderColor: '#DEDEDE',
                     highlightBorderWidth: 2,
@@ -231,23 +259,35 @@
                     }
                 }
             });
-
-            // Alternatively with d3
-            d3.select(window).on('resize', function() {
-                map.resize();
-            });
-            </script>
+        </script>
     </div>
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="part-4">
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
-                <p><h3>Факт: В Україні рівень смертності від куріння один із найвищих у світі</h3></p>
-                <p><h6>Смертність від куріння</h6></p>
-                <p><div id="container2"></div></p>
-                <div class="source"><p>джерело: <a href="https://ourworldindata.org/grapher/death-rate-smoking" target="_blank">Our World in Data</a></p></div>
+    <div class="container-fluid part-x" id="part-4" >
+        <div class="slide">
+            <div class="slide-title">
+                <span class="en">
+                    <h3>Fact: in Ukraine, the death rate from smoking is among the highest in the world</h3>
+                    <h6>Death rate from smoking</h6>
+                </span>
+                <span class="ukr">
+                    <h3>Факт: В Україні рівень смертності від куріння один із найвищих у світі</h3>
+                    <h6>Смертність від куріння</h6>
+                </span>
+            </div>
+            <div class="slide-graphic">
+                <div id="container2"></div>
+            </div>
+            <div class="slide-info">
+                <div class="source">
+                    <span class="en">
+                        <p>Source: <a href="https://ourworldindata.org/grapher/death-rate-smoking" target="_blank">Our World in Data</a></p>
+                    </span>
+                    <span class="ukr">
+                        <p>джерело: <a href="https://ourworldindata.org/grapher/death-rate-smoking" target="_blank">Our World in Data</a></p>
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -305,7 +345,7 @@
             // render map
             new Datamap({
                 element: document.getElementById('container2'),
-                responsive: false,
+                responsive: responsive,
                 projection: 'mercator', // big world map
                 // countries don't listed in dataset will be painted with this color
                 fills: { defaultFill: '#F5F5F5' },
@@ -331,25 +371,36 @@
                     }
                 }
             });
-
-            // Alternatively with d3
-            d3.select(window).on('resize', function() {
-                map.resize();
-            });
-        </script>
+         </script>
     </div>
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="part-5">
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
-                <h3>Підвищення податків — економічно найефективніший спосіб зниженя вживання тютюну</h3>
-                <canvas id="chart_1" width="400" height="200"></canvas>
-                <div class="source"><p>джерело: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
+    <div class="container-fluid part-x" id="part-5" >
+        <div class="slide">
+            <div class="slide-title en">
+              <h3>Tax increases are already helping to reduce tobacco consumption in Ukraine</h3>
+            </div>
+            <div class="slide-title ukr">
+                <h3>Підвищення податків — економічно найефективніший спосіб зниженя вживання тютюну</h3> 
+            </div>
+            <div class="slide-graphic">
+                <canvas id="chart_1"></canvas>
+            </div>
+            <div class="slide-info">
+                <span class="en">
+                    <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p>
+                    </div>
+                    <p>The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.
+                        <sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank"> source</a></sup>
+                    </p>
+                </span>
+                <span class="ukr">
+                    <div class="source"><p>джерело: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
                 <p>Податок, що підвищує ціну тютюну на 10%, знижує його вживання на 5%. Це особливо ефективно серед молоді та людей з низьким рівнем доходу.
                     <sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank"> джерело</a></sup></p>
-            </div>
+                </span>
+            </div>  
         </div>
 
         <script>
@@ -358,14 +409,14 @@
                 "data": {
                     "labels": ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
                     "datasets": [{
-                        "label": "Акциз на пачку сигарет, грн",
+                        "label": "Excise per pack of cigarettes, UAH",
                         "data": [0.58,1.62,2.74,3.48,4.04,4.76,4.96,6.08,8.62,12,15.5],
                         "type": "line",
                         "fill": false,
                         "borderColor": blue,
                         "backgroundColor": blue
                     },{
-                        "label": "Кількість курців щодня, мільйони",
+                        "label": "Number of daily smokers, millions",
                         "data": [10.1,9.2,8.7,8.6,8.35,8.1,7.7,6.7,6.9,6.5,5.96],
                         "type": "line",
                         "fill": false,
@@ -387,87 +438,121 @@
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="part-6">
-        <div class="container" style="max-width: 700px">
-            <div class="jumbotron">
-                <p><h3>Підвищення податку вже сприяє позитивним змінам для охорони здоров'я в Україні</h3></p>
-
-                <canvas id="chart-area-3" width="400" height="200"></canvas>
-
-                <script>
-                    new Chart(document.getElementById("chart-area-3"), {
-                        "type": "bar",
-                        "data": {
-                            "labels": ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
-                            "datasets": [{
-                                "label": "Дохід від акцизного тютюну, млрд. Грн",
-                                "data": [3.6,9.1,13.1,15.3,16.6,17.9,18.1,22.2,33.2,39.9,43.6],
-                                "type": "line",
-                                "fill": false,
-                                "backgroundColor": blue,
-                                "borderColor": blue
-                            },{
-                                "label": "Акциз на пачку сигарет, грн",
-                                "data": [0.58,1.62,2.74,3.48,4.04,4.76,4.96,6.08,8.62,12,15.5],
-                                "type": "line",
-                                "fill": false,
-                                "borderColor": red,
-                                // "backgroundColor": "rgba(255, 99, 132, 0.8)"}]
-                                "backgroundColor": red,}]
-                        },
-                        "options": {
-                            "scales": {
-                                "yAxes": [{
-                                    "ticks": {
-                                        "beginAtZero": true
-                                    }
-                                }]
-                            }
-                        }
-                    });
-                </script>
-
-                <div class="source"><p>джерело: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
-                <div style="font-size: small">
-                <p>Світовий банк передбачає, що до 2035 року податок на тютюн в Україні допоможе уникнути: 126,730 нових випадків захворювань, пов'язаних із курінням; 29,172 передчасних смертей; та 267,098 втрачених років життя.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/893811554737147697/Is-Tobacco-Taxation-Regressive-Evidence-on-Public-Health-Domestic-Resource-Mobilization-and-Equity-Improvements" target="_blank"> джерело</a></sup> </p>
-
-                <p>Зменшення захворюваності та смертей збереже 1.5 мільярдів гривень на охорону здоров'я, а також 16.5 мільярдів гривень витрат на передчасну смерть.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/893811554737147697/Is-Tobacco-Taxation-Regressive-Evidence-on-Public-Health-Domestic-Resource-Mobilization-and-Equity-Improvements" target="_blank"> джерело</a></sup>
-                Це також дозволить запобігти втраті ВВП на 3,2%.<sup style="font-family: Arial; opacity: 0.6"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5801657/" target="_blank"> джерело</a></sup></p>
-
-                <p>І це не є критичним фактором збільшення незаконної торгівлі.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/238861522243274209/Economics-of-Tobacco-Taxation-Toolkit" target="_blank"> джерело</a></sup></p>
-                </div>
+    <div class="container-fluid part-x" id="part-6" >
+        <div class="slide">
+            <div class="slide-title">
+                <span class="en">
+                    <h3>Tax increases are already generating public health benefits in Ukraine</h3>
+                </span>
+                <span class="ukr">
+                    <h3>Підвищення податку вже сприяє позитивним змінам для охорони здоров'я в Україні</h3>
+                </span>
+                
+            </div>
+            <div class="slide-graphic">
+                <canvas id="chart-area-3"></canvas>
+            </div>
+            <div class="slide-info">
+                <span class="en">
+                    <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
+                    <div style="font-size: small">
+                        <p>World Bank's simulation estimated the public-health impacts of tobacco taxation measures, along with other tobacco control policies.
+                        By 2035, Ukraine’s tobacco tax hike will avoid: 126,730 new cases of smoking-related disease; 29,172 premature deaths;
+                        and 267,098 potential years of life lost.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/893811554737147697/Is-Tobacco-Taxation-Regressive-Evidence-on-Public-Health-Domestic-Resource-Mobilization-and-Equity-Improvements" target="_blank"> source</a></sup> 
+                        </p>
+                        <p>Reductions in disease and death will save UAH 1.5 billion in health care costs and UAH 16.5 billion in premature mortality costs.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/893811554737147697/Is-Tobacco-Taxation-Regressive-Evidence-on-Public-Health-Domestic-Resource-Mobilization-and-Equity-Improvements" target="_blank"> source</a></sup> It will also avert the GDP loss of 3,2%.<sup style="font-family: Arial; opacity: 0.6"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5801657/" target="_blank"> джерело</a></sup>
+                        </p>
+                        <p>And no, it's not a critical factor in the increase of illicit trade.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/238861522243274209/Economics-of-Tobacco-Taxation-Toolkit" target="_blank"> source</a></sup>
+                        </p>
+                    </div>
+                </span>
+                <span class="ukr">
+                    <div class="source">
+                        <p>джерело: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p>
+                    </div>
+                    <div style="font-size: small">
+                        <p>Світовий банк передбачає, що до 2035 року податок на тютюн в Україні допоможе уникнути: 126,730 нових випадків захворювань, пов'язаних із курінням; 29,172 передчасних смертей; та 267,098 втрачених років життя.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/893811554737147697/Is-Tobacco-Taxation-Regressive-Evidence-on-Public-Health-Domestic-Resource-Mobilization-and-Equity-Improvements" target="_blank"> джерело</a></sup> 
+                        </p>
+                        <p>Зменшення захворюваності та смертей збереже 1.5 мільярдів гривень на охорону здоров'я, а також 16.5 мільярдів гривень витрат на передчасну смерть.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/893811554737147697/Is-Tobacco-Taxation-Regressive-Evidence-on-Public-Health-Domestic-Resource-Mobilization-and-Equity-Improvements" target="_blank"> джерело</a></sup>
+                        </p>
+                        <p>Це також дозволить запобігти втраті ВВП на 3,2%.<sup style="font-family: Arial; opacity: 0.6"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5801657/" target="_blank"> джерело</a></sup></p>
+                        <p>І це не є критичним фактором збільшення незаконної торгівлі.<sup style="font-family: Arial; opacity: 0.6"><a href="http://documents.worldbank.org/curated/en/238861522243274209/Economics-of-Tobacco-Taxation-Toolkit" target="_blank"> джерело</a></sup>
+                        </p>
+                    </div>
+                </span>
             </div>
         </div>
+        <script>
+            var chart3 = document.getElementById("chart-area-3");
+            if (!responsive) {
+                chart3.height = 100;
+            }
+            new Chart(document.getElementById("chart-area-3"), {
+                "type": "bar",
+                "data": {
+                    "labels": ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+                    "datasets": [{
+                        "label": "Tobacco excise revenue, bln UAH",
+                        "data": [3.6,9.1,13.1,15.3,16.6,17.9,18.1,22.2,33.2,39.9,43.6],
+                        "type": "line",
+                        "fill": false,
+                        "backgroundColor": blue,
+                        "borderColor": blue
+                    },{
+                        "label": "Excise per pack of cigarettes, UAH",
+                        "data": [0.58,1.62,2.74,3.48,4.04,4.76,4.96,6.08,8.62,12,15.5],
+                        "type": "line",
+                        "fill": false,
+                        "borderColor": red,
+                        // "backgroundColor": "rgba(255, 99, 132, 0.8)"}]
+                        "backgroundColor": red,}]
+                },
+                "options": {
+                    "scales": {
+                        "yAxes": [{
+                            "ticks": {
+                                "beginAtZero": true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
     </div>
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="part-last">
+    <div class="container-fluid part-x" id="part-last" >
         <div class="container" style="color: #1d2124; opacity: 0.9;">
-            <p class="ml12 h-100" style="font-size: 6.5vh; font-weight: 300; line-height: 1.2;">Україна: ціна куріння</p>
+            <span class="en">
+                <p class="ml12" style="font-size: 6.5vh; font-weight: 300; line-height: 1.2;">Ukraine: the Price of Smoking</p>
 
-            <p class="lead mb-0">Щороку, тютюн вбиває до половини курців. Податок, що підвищує ціну тютюну на 10%, знижує його вживання на 5%. Це особливо ефективно серед молоді та людей з низьким рівнем доходу.</p>
+                <p class="lead mb-0">Every year, tobacco kills up to a half of its users worldwide. The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.</p>
+            </span>
+            <span class="ukr">
+                <p class="ml12 h-100" style="font-size: 6.5vh; font-weight: 300; line-height: 1.2;">Україна: ціна куріння</p>
+                <p class="lead mb-0">Щороку, тютюн вбиває до половини курців. Податок, що підвищує ціну тютюну на 10%, знижує його вживання на 5%. Це особливо ефективно серед молоді та людей з низьким рівнем доходу.</p>
+                <br>
+                <p class="lead mb-0">Дякуємо Україні за захист своїх громадян та їхніх дітей завдяки оподаткуванню тютюнових виробів!</p>
+            </span>
             <br>
-
-            <p class="lead mb-0">Дякуємо Україні за захист своїх громадян та їхніх дітей завдяки оподаткуванню тютюнових виробів!</p>
-
-            <br>
-            <div class="fb-share-button" data-href="https://priceofsmoking.org" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpriceofsmoking.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-
+            <div class="fb-share-button" data-href="https://priceofsmoking.org" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpriceofsmoking.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><span class="en">Share</span><span class="ukr"></span></a></div>
             <br>
             <div style="font-weight: bold; font-family: Arial; font-size: small; align-self:flex-end; opacity: 0.5;">
                 <br><p id="copyright"></p>
             </div>
 
+
             <script>
                 function copyrightYear() {
                     var d = new Date();
                     var y = d.getFullYear();
-                    document.getElementById("copyright").innerHTML = 'Copyright &copy; ' + y + ' Україна: ціна куріння for <a href="http://center-life.org/en/" target="_blank">Життя</a>';
+                    document.getElementById("copyright").innerHTML = 'Copyright &copy; ' + y + ' Ukraine: the Price of Smoking for <a href="http://center-life.org/en/" target="_blank">Життя</a>';
                 }
 
                 copyrightYear();
             </script>
+
         </div>
 
         <!--    Animated text -->
@@ -543,6 +628,42 @@
         </script>
     </div>
 </section>
+<script>
+    var els = document.getElementsByClassName("part-x");
+
+    var inViews = [];
+    for(var i=0; i<els.length; i++) {
+        inViews[i] = false;
+        stick(els[i], i);
+    }
+
+    function stick(el, i) {
+        window.addEventListener("scroll", function() {
+            var fromTop = el.getBoundingClientRect().top;
+            if (Math.abs(fromTop) < 50 && inViews[i] == false) {
+                el.scrollIntoView();
+                inViews[i] = true;
+            }
+            if (Math.abs(fromTop) >= 50) {
+                inViews[i] = false;
+            }
+        })  
+    }
+
+    var lang = document.getElementById("lang");
+    var showUKR = true;
+    lang.onclick = function() {
+        if (showUKR) {
+            $('.ukr').hide();
+            $('.en').show();
+            showUKR = false;
+        } else {
+            $('.en').hide();
+            $('.ukr').show();
+            showUKR = true;    
+        }
+    }    
+</script>
 
 </body>
 </html>
