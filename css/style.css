@@ -244,12 +244,11 @@ a:visited {
     .slide-graphic {
         height: auto !important;
     }
-    canvas {
-        width: 100%;
-        margin: 0;
-    }
     .slide {
         font-size: 12px;
+    }
+    canvas {
+        width: 100%;
     }
 }
 

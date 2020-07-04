@@ -398,7 +398,7 @@
                 <h3>Tax increases are already generating public health benefits in Ukraine</h3>
             </div>
             <div class="slide-graphic">
-                <canvas id="chart-area-3" height="200"></canvas>
+                <canvas id="chart-area-3"></canvas>
             </div>
             <div class="slide-info">
                 <div class="source"><p>Source: <a href="http://documents.worldbank.org/curated/en/765671507036953947/Regressive-or-progressive-the-effect-of-tobacco-taxes-in-Ukraine" target="_blank">World Bank</a></p></div>
@@ -413,6 +413,10 @@
             </div>
         </div>
             <script>
+                var chart3 = document.getElementById("chart-area-3");
+                if (!responsive) {
+                    chart3.height = 100;
+                }
                 new Chart(document.getElementById("chart-area-3"), {
                     "type": "bar",
                     "data": {
