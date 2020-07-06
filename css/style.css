@@ -51,16 +51,12 @@ header .overlay {
     z-index: 1;
 }
 
-footer {
-    background: #1d2124;
-    color: silver;
-    font-size: small;
-    font-family: Arial;
+.footer {
     font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5vh;
+    font-family: Arial;
+    font-size: small;
+    align-self:flex-end;
+    opacity: 0.5;
 }
 
 emphasis {
