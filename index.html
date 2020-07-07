@@ -8,7 +8,7 @@
     <meta name="author"                 content="P.E.N.">
     <meta property="og:url"             content="https://priceofsmoking.org/" />
     <meta property="og:type"            content="website" />
-    <meta property="og:title"           content="Україна задимлена | Ukraine: the Price of Smoking" />
+    <meta property="og:title"           content="Україна: ціна куріння | Ukraine: the Price of Smoking" />
     <meta property="og:description"     content="Після 30 років 12% людей помирає від куріння.Він вбиває більше 8 мільйонів людей щороку. Кожній з цих смертей можна запобігти." />
     <meta property="og:image"           content="https://priceofsmoking.org/oth3.gif" />
     <link rel="canonical"               href="https://stayhomecampaign.org" />
@@ -90,7 +90,7 @@
         <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white en">
                 <p><h1 class="title en">Ukraine: the Price of Smoking</h1></p>
-                <p class="lead">Every year, tobacco kills up to a half of its users worldwide. The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.</p>
+                <p class="lead">Every year, tobacco kills up to a half of its users worldwide. The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that raises tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.</p>
                 <div class="scroll-down" style="padding: 3vh"><a href="#part-2">LEARN MORE</a></div>                
             </div>
             <div class="w-100 text-white ukr">
@@ -539,8 +539,11 @@
                 function copyrightYear() {
                     var d = new Date();
                     var y = d.getFullYear();
-                    document.getElementById("copyright").innerHTML = 'Copyright &copy; ' + y + ' Ukraine: the Price of Smoking for <a href="http://center-life.org/en/" target="_blank">Життя</a>.'
-                    + ' <br>Наші реквізити: ГО «ЖИТТЯ», код ЄДРПОУ-36594108' + '  <br>р/р № UA 673220010000026000000578849' + ' <br>в АТ «Універсал Банк» МФО 322001.' + ' <br>Призначення платежу: добровільна пожертва.';
+                    document.getElementById("copyright").innerHTML = 'Copyright &copy; ' + y + ' <a href="https://github.com/ukraine-in-smoke/ukraine-in-smoke.github.io" target="_blank">The Price of Smoking</a> for <a href="http://center-life.org/en/" target="_blank">Життя</a>.'
+                        + ' <br>Наші реквізити: ГО «ЖИТТЯ», код ЄДРПОУ-36594108'
+                        + '  <br>р/р № UA 673220010000026000000578849'
+                        + ' <br>в АТ «Універсал Банк» МФО 322001.'
+                        + ' <br>Призначення платежу: добровільна пожертва.';
                 }
 
                 copyrightYear();
@@ -621,6 +624,7 @@
         </script>    </div>
 </section>
 <script>
+    // Stick to the top when scrolling
     var els = document.getElementsByClassName("part-x");
 
     var inViews = [];
@@ -642,6 +646,7 @@
         })  
     }
 
+    // Language switcher
     var lang = document.getElementById("lang");
     var showUKR = true;
     lang.onclick = function() {
