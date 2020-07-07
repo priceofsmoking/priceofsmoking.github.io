@@ -624,27 +624,27 @@
     </div>
 </section>
 <script>
-    // Stick to the top when scrolling
-    var els = document.getElementsByClassName("part-x");
+    // // Stick to the top when scrolling
+    // var els = document.getElementsByClassName("part-x");
 
-    var inViews = [];
-    for(var i=0; i<els.length; i++) {
-        inViews[i] = false;
-        stick(els[i], i);
-    }
+    // var inViews = [];
+    // for(var i=0; i<els.length; i++) {
+    //     inViews[i] = false;
+    //     stick(els[i], i);
+    // }
 
-    function stick(el, i) {
-        window.addEventListener("scroll", function() {
-            var fromTop = el.getBoundingClientRect().top;
-            if (Math.abs(fromTop) < 50 && inViews[i] == false) {
-                el.scrollIntoView();
-                inViews[i] = true;
-            }
-            if (Math.abs(fromTop) >= 50) {
-                inViews[i] = false;
-            }
-        })  
-    }
+    // function stick(el, i) {
+    //     window.addEventListener("scroll", function() {
+    //         var fromTop = el.getBoundingClientRect().top;
+    //         if (Math.abs(fromTop) < 100 && inViews[i] == false) {
+    //             el.scrollIntoView();
+    //             inViews[i] = true;
+    //         }
+    //         if (Math.abs(fromTop) >= 100) {
+    //             inViews[i] = false;
+    //         }
+    //     })  
+    // }
 
     // Language switcher
     var lang = document.getElementById("lang");
