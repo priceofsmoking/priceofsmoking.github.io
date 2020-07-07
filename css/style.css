@@ -55,8 +55,8 @@ header .overlay {
     font-weight: bold;
     font-family: Arial;
     font-size: small;
-    align-self:flex-end;
-    opacity: 0.5;
+    opacity: 0.5;    
+    flex-shrink: 0;
 }
 
 emphasis {
@@ -215,16 +215,21 @@ a:visited {
 #part-last {
     background: #999999;
     margin: 0;
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+    
+    display: flex;
+    flex-direction: column;
+    
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
 }
+
+#part-last .container {
+    flex: 1 0 auto;
+}
+
+
 
 #_progress {
     --scroll: 0%;
