@@ -523,31 +523,13 @@
                 <p class="lead mb-0">Every year, tobacco kills up to a half of its users worldwide. The most cost-effective way to reduce tobacco use is to raise taxes. In a country like Ukraine, a tax increase that increases tobacco prices by 10% decreases tobacco consumption by about 5%. It is especially effective among youth and people of low income.</p>
             </span>
             <span class="ukr">
-                <p class="ml12 h-100" style="font-size: 6.5vh; font-weight: 300; line-height: 1.2;">Україна: ціна куріння</p>
+                <p class="ml12" style="font-size: 6.5vh; font-weight: 300; line-height: 1.2;">Україна: ціна куріння</p>
                 <p class="lead mb-0">Щороку тютюн вбиває до половини курців. Податок, що підвищує ціну тютюну на 10%, знижує його вживання на 5%. Це особливо ефективно серед молоді та людей з низьким рівнем доходу.</p>
                 <br>
                 <p class="lead mb-0">Дякуємо Україні за захист своїх громадян та їхніх дітей завдяки оподаткуванню тютюнових виробів!</p>
             </span>
             <br>
             <div class="fb-share-button" data-href="https://priceofsmoking.org" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpriceofsmoking.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><span class="en">Share</span><span class="ukr"></span></a></div>
-
-            <div class="footer">
-                <br><p id="copyright"></p>
-            </div>
-
-            <script>
-                function copyrightYear() {
-                    var d = new Date();
-                    var y = d.getFullYear();
-                    document.getElementById("copyright").innerHTML = 'Copyright &copy; ' + y + ' <a href="https://github.com/ukraine-in-smoke/ukraine-in-smoke.github.io" target="_blank">The Price of Smoking</a> for <a href="http://center-life.org/en/" target="_blank">Життя</a>.'
-                        + ' <br>Наші реквізити: ГО «ЖИТТЯ», код ЄДРПОУ-36594108'
-                        + '  <br>р/р № UA 673220010000026000000578849'
-                        + ' <br>в АТ «Універсал Банк» МФО 322001.'
-                        + ' <br>Призначення платежу: добровільна пожертва.';
-                }
-
-                copyrightYear();
-            </script>
 
         </div>
 
@@ -621,30 +603,48 @@
             }
 
             setInterval(updateGradient, 10);
-        </script>    </div>
+        </script>    
+        <div class="footer">
+            <br><p id="copyright"></p>
+        </div>
+
+        <script>
+            function copyrightYear() {
+                var d = new Date();
+                var y = d.getFullYear();
+                document.getElementById("copyright").innerHTML = 'Copyright &copy; ' + y + ' <a href="https://github.com/ukraine-in-smoke/ukraine-in-smoke.github.io" target="_blank">The Price of Smoking</a> for <a href="http://center-life.org/en/" target="_blank">Життя</a>.'
+                    + ' <br>Наші реквізити: ГО «ЖИТТЯ», код ЄДРПОУ-36594108'
+                    + '  <br>р/р № UA 673220010000026000000578849'
+                    + ' <br>в АТ «Універсал Банк» МФО 322001.'
+                    + ' <br>Призначення платежу: добровільна пожертва.';
+            }
+
+            copyrightYear();
+        </script>
+    </div>
 </section>
 <script>
-    // Stick to the top when scrolling
-    var els = document.getElementsByClassName("part-x");
+    // // Stick to the top when scrolling
+    // var els = document.getElementsByClassName("part-x");
 
-    var inViews = [];
-    for(var i=0; i<els.length; i++) {
-        inViews[i] = false;
-        stick(els[i], i);
-    }
+    // var inViews = [];
+    // for(var i=0; i<els.length; i++) {
+    //     inViews[i] = false;
+    //     stick(els[i], i);
+    // }
 
-    function stick(el, i) {
-        window.addEventListener("scroll", function() {
-            var fromTop = el.getBoundingClientRect().top;
-            if (Math.abs(fromTop) < 50 && inViews[i] == false) {
-                el.scrollIntoView();
-                inViews[i] = true;
-            }
-            if (Math.abs(fromTop) >= 50) {
-                inViews[i] = false;
-            }
-        })  
-    }
+    // function stick(el, i) {
+    //     window.addEventListener("scroll", function() {
+    //         var fromTop = el.getBoundingClientRect().top;
+    //         if (Math.abs(fromTop) < 100 && inViews[i] == false) {
+    //             el.scrollIntoView();
+    //             inViews[i] = true;
+    //         }
+    //         if (Math.abs(fromTop) >= 100) {
+    //             inViews[i] = false;
+    //         }
+    //     })  
+    // }
 
     // Language switcher
     var lang = document.getElementById("lang");
